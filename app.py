@@ -1,6 +1,7 @@
 import streamlit as st
 from pipeline.inference import generate_graphq_ir
 import torch
+import requests
 from transformers import BartTokenizer, BartForConditionalGeneration
 
 

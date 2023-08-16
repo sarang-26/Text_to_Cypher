@@ -28,7 +28,7 @@ def load_model_from_google_drive(gdrive_url, model_path='model.pth'):
 tokenizer = BartTokenizer.from_pretrained("facebook/bart-large")
 model_url = "https://drive.google.com/file/d/1-DvdMr0vIJKKB3Efqz-zrImQcpOuc5Nq/view?usp=drive_link"
 model = load_model_from_google_drive(model_url)
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cpu")
 model.to(device)
 
 

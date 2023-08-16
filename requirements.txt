@@ -2,3 +2,4 @@ streamlit==0.87.0  # This is the latest version as of my last update, you can ad
 torch==1.9.0  # Again, adjust to your preferred version.
 transformers==4.9.2  # Latest version as of my last update.
 requests==2.26.0
+gdown==4.7.1

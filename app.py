@@ -4,27 +4,30 @@ import torch
 import requests
 from transformers import BartTokenizer, BartForConditionalGeneration
 import time
+import gdown
 
+def download_from_google_drive(gdrive_url, output_path):
+    # Extract file id from the Google Drive link
+    file_id = gdrive_url.split('/')[-2]
+    download_url = f'https://drive.google.com/uc?id={file_id}'
+    
+    gdown.download(download_url, output_path, quiet=False)
+    
+    return output_path
 
-
-
-@st.cache(allow_output_mutation=True)
-def load_model_from_url(url, model_path='model.pth'):
-    response = requests.get(url, stream=True)
-    response.raise_for_status()
-    with open(model_path, "wb") as file:
-        for chunk in response.iter_content(chunk_size=8192):
-            file.write(chunk)
+def load_model_from_google_drive(gdrive_url, model_path='model.pth'):
+    downloaded_path = download_from_google_drive(gdrive_url, model_path)
 
     model = BartForConditionalGeneration.from_pretrained("facebook/bart-large")
-    model.load_state_dict(torch.load(model_path))
+    model.load_state_dict(torch.load(downloaded_path))
     model.eval()
     return model
 
 
+
 tokenizer = BartTokenizer.from_pretrained("facebook/bart-large")
 model_url = "https://drive.google.com/file/d/1-DvdMr0vIJKKB3Efqz-zrImQcpOuc5Nq/view?usp=drive_link"
-model = load_model_from_url(model_url)
+model = load_model_from_google_drive(model_url)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 

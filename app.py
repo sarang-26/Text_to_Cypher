@@ -13,6 +13,7 @@ def download_from_google_drive(gdrive_url, output_path):
     gdown.download(download_url, output_path, quiet=False)
     return output_path
 
+@st.cache(allow_output_mutation=True)
 def load_model_from_google_drive(gdrive_url, model_path='model.pth'):
     model = download_from_google_drive(gdrive_url, model_path)
     return model

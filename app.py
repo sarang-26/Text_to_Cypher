@@ -18,6 +18,7 @@ st.title("Text to Cypher")
 st.write("This is a demo of the Text to Cypher pipeline. Please enter a sentence and click the button to generate a Cypher query.")
 user_input = st.text_area("Enter your text:", "")
 
+
 if st.button("Generate Cypher"):
     output = generate_graphq_ir(user_input, model, tokenizer, device)
     st.text_area("Cypher Query:", output)

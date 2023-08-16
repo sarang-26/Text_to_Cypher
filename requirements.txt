@@ -1,0 +1,3 @@
+streamlit==0.87.0  # This is the latest version as of my last update, you can adjust to the version you prefer.
+torch==1.9.0  # Again, adjust to your preferred version.
+transformers==4.9.2  # Latest version as of my last update.

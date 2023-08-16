@@ -19,7 +19,7 @@ def load_model_from_google_drive(gdrive_url, model_path='model.pth'):
     downloaded_path = download_from_google_drive(gdrive_url, model_path)
 
     model = BartForConditionalGeneration.from_pretrained("facebook/bart-large")
-    model.load_state_dict(torch.load(downloaded_path))
+    model.load_state_dict(torch.load(downloaded_path, map_location=torch.device('cpu')))
     model.eval()
     return model
 

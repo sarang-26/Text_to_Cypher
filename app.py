@@ -4,13 +4,28 @@ import torch
 from transformers import BartTokenizer, BartForConditionalGeneration
 
 
+
+
+@st.cache(allow_output_mutation=True)
+def load_model_from_url(url, model_path='model.pth'):
+    response = requests.get(url, stream=True)
+    response.raise_for_status()
+    with open(model_path, "wb") as file:
+        for chunk in response.iter_content(chunk_size=8192):
+            file.write(chunk)
+
+    model = BartForConditionalGeneration.from_pretrained("facebook/bart-large")
+    model.load_state_dict(torch.load(PATH))
+    model.eval()
+    return model
+
+# Load the model
+model_url = "https://github.com/sarang-sonar26/Text_to_Cypher/model.pth"
+model = load_model_from_url(model_url)
 tokenizer = BartTokenizer.from_pretrained("facebook/bart-large")
-PATH="/Users/sarangsonar/Documents/GitHub/delfine-cypher_query/model/model.pth"
-model = BartForConditionalGeneration.from_pretrained("facebook/bart-large")
-model.load_state_dict(torch.load(PATH))
-model.eval()
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
+
 
 #streamlit UI
 

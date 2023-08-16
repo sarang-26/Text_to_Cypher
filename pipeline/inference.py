@@ -1,5 +1,7 @@
 
-def generate_graphq_ir(query, model, tokenizer, device):
+import torch
+
+def generate_graphq_ir(query, model, tokenizer):
     """
     Generate GraphQ IR sequence for a given natural language query.
 
@@ -16,7 +18,7 @@ def generate_graphq_ir(query, model, tokenizer, device):
     model.eval()
 
     # Tokenize the input query
-    inputs = tokenizer([query], return_tensors="pt", max_length=512, truncation=True).to(device)
+    inputs = tokenizer([query], return_tensors="pt", max_length=512, truncation=True).to(torch.device("cpu"))
 
     # Generate the output sequence
     output_ids = model.generate(inputs["input_ids"], attention_mask=inputs["attention_mask"], max_length=512, num_beams=5, temperature=0.7)

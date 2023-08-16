@@ -10,9 +10,7 @@ def download_from_google_drive(gdrive_url, output_path):
     # Extract file id from the Google Drive link
     file_id = gdrive_url.split('/')[-2]
     download_url = f'https://drive.google.com/uc?id={file_id}'
-    
     gdown.download(download_url, output_path, quiet=False)
-    
     return output_path
 
 def load_model_from_google_drive(gdrive_url, model_path='model.pth'):
@@ -39,6 +37,6 @@ user_input = st.text_area("Enter your text:", "")
 
 
 if st.button("Generate Cypher"):
-    output = generate_graphq_ir(user_input, model, tokenizer, device)
+    output = generate_graphq_ir(user_input, model, tokenizer)
     st.text_area("Cypher Query:", output)
 

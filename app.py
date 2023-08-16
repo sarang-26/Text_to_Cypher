@@ -16,7 +16,7 @@ def load_model_from_url(url, model_path='model.pth'):
             file.write(chunk)
 
     model = BartForConditionalGeneration.from_pretrained("facebook/bart-large")
-    model.load_state_dict(torch.load(PATH))
+    model.load_state_dict(torch.load(model_path))
     model.eval()
     return model
 

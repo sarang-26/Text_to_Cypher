@@ -22,24 +22,9 @@ def load_model_from_url(url, model_path='model.pth'):
     return model
 
 
-
-# Create a placeholder for the progress bar
-progress_bar = st.empty()
-
-st.write("Loading the model...")
-
-for percent_complete in range(100):
-    time.sleep(0.05)  # you can adjust this to control the speed of the progress bar
-    progress_bar.progress(percent_complete + 1)
-
-# Load the model
+tokenizer = BartTokenizer.from_pretrained("facebook/bart-large")
 model_url = "https://drive.google.com/file/d/1-DvdMr0vIJKKB3Efqz-zrImQcpOuc5Nq/view?usp=drive_link"
 model = load_model_from_url(model_url)
-
-st.write("Model loaded!")
-
-
-tokenizer = BartTokenizer.from_pretrained("facebook/bart-large")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 

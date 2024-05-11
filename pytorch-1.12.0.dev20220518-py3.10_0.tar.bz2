@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    
+    <title>Not Found :: Anaconda.org</title>
+    <link rel="shortcut icon" href="//binstar-static-prod.s3.amazonaws.com/latest/img/apple-touch-icon.png">
+    <link rel="stylesheet" type="text/css" href="//binstar-static-prod.s3.amazonaws.com/latest/css/app.css">
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+    <script src="//binstar-static-prod.s3.amazonaws.com/latest/js/bundle.js"></script>
+    
+    <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+    
+    <script data-cfasync="false" data-report-only="off" src="https://cdn.transcend.io/cm/471944e6-c8d1-4cfe-902c-0ed1695b7053/airgap.js"></script>
+    
+    
+
+    <!-- Start VWO Async SmartCode -->
+    <script type='text/javascript'>
+      window._vwo_code = window._vwo_code || (function(){
+      var account_id=515061,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          is_spa=1,
+          hide_element='body',
+
+      /* DO NOT EDIT BELOW THIS LINE */
+      f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
+      window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
+    </script>
+    <!-- End VWO Async SmartCode -->
+
+  </head>
+  <body >
+    
+    
+      <div class="v2-header v2-margins">
+  <div class="v2-content v2-nav-bar">
+    <div class="v2-nav-bar-header">
+      <a class="v2-link v2-nav-item" href="/">
+        <img class="v2-nav-logo" alt="Anaconda.org" src="//binstar-static-prod.s3.amazonaws.com/latest/img/anaconda_org_logo.svg">
+      </a>
+      <label class="v2-nav-item v2-nav-collapse-button" data-toggle-submenu="menu">Menu&nbsp;&nbsp;<i class="fa fa-bars"></i></label>
+    </div>
+    <div class="v2-nav-stretch" data-submenu-item="menu">
+      
+        <form class="v2-input-group v2-nav-search" action="/search">
+          <label for="navbar-search-input" class="v2-muted"><i class="fa fa-search"></i></label>
+          <input id="navbar-search-input" name="q" type="text" class="v2-textbox" placeholder="Search Anaconda.org">
+        </form>
+      
+    </div>
+    
+    <a class="v2-link v2-nav-item" href="https://www.anaconda.com/about-us" target="_blank" data-submenu-item="menu">About</a>
+    <a class="v2-link v2-nav-item" href="https://www.anaconda.com/pricing" target="_blank" data-submenu-item="menu">Anaconda</a>
+    <a class="v2-link v2-nav-item" href="https://docs.anaconda.com/free/anacondaorg/user-guide/" target="_blank" data-submenu-item="menu">Help</a>
+    <a class="v2-link v2-nav-item" href="https://www.anaconda.com/download" target="_blank" data-submenu-item="menu">Download Anaconda</a>
+    <div class="v2-nav-item" data-submenu-item="menu">
+      <a class="v2-button v2-accent" href="/account/login?next=%2Fpytorch-nightly%2Fpytorch%2F1.12.0.dev20220518%2Fdownload%2Fosx-arm64%2Fpytorch-1.12.0.dev20220518-py3.10_0.tar.bz2">Sign In</a>
+    </div>
+  </div>
+  <div class="v2-right-margin v2-optional">
+    <div class="v2-nav-margin-item">
+      <a class="v2-link v2-accent" href="https://anaconda.cloud/?utm_source=anacondaorg" target="_blank">Anaconda.cloud <i class="fa fa-external-link"></i></a>
+    </div>
+  </div>
+</div>
+    
+    
+    <div class="container">
+      
+      <div class="row">
+        <div class="columns medium-12">
+          
+          
+          
+          
+        </div>
+      </div>
+
+      
+
+      
+        <div class="row"><div class="columns medium-12">
+  <div class="text-center">
+    <h3 id="errorSummary">
+      
+    </h3>
+    <p>
+      
+<h3>The page you are looking for does not exist.</h3>
+
+<p>
+    
+  <form action="/account/login?next=https%3A%2F%2Fanaconda.org%2Fpytorch-nightly%2Fpytorch%2F1.12.0.dev20220518%2Fdownload%2Fosx-arm64%2Fpytorch-1.12.0.dev20220518-py3.10_0.tar.bz2" method="post">
+    <input id="csrf_token" name="csrf_token" type="hidden" value="IjIwNjU0ZGE2NDFkZDY5OWNiM2IzYjgwODQyZjk0YmIyNTlhODA5OGUi.ZN3Q0Q.KQLc_bLsJTXdqIcL6AUF-q-O-Hg">
+    <input id="username" name="username"
+         placeholder="Username"
+         class=""
+         type="text"
+         value="" >
+  <small id="username-error"class="error" style="display: none"></small>
+    
+  <input id="password" name="password"
+         placeholder="Password"
+         class=""
+         type="password"
+         value="" >
+  <small id="password-error"class="error" style="display: none"></small>
+
+    <button class="expand" type="submit">Log In</button>
+  </form>
+    
+</p>
+<p>
+  
+  <a href='/account/forgot_password'>I forgot my password.</a>
+  
+  
+  <br>
+  <a href="/account/register">Register for an account</a>
+  
+</p>
+
+
+
+    </p>
+    <div style="margin-top: 3rem; ">
+      
+      
+    </div>
+  </div>
+</div></div>
+      
+    </div>
+    <footer class="">
+  
+  <div class="row footer-row">
+    <div class="columns medium-3">
+      <img src="/static/img/anaconda-symbol.svg" width="63" height="63"/>
+      <p class="footer-slogan">By data scientists, for <span class="footer-slogan-accent">data scientists</span></p>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com/anacondainc" target="_blank" aria-haspopup="true" data-tooltip title="Find us on Facebook">
+        <img src="/static/img/social-icons/facebook-new.svg"/>
+        </a>
+        <a href="https://twitter.com/anacondainc" target="_blank" aria-haspopup="true" data-tooltip title="Follow us on Twitter">
+          <img src="/static/img/social-icons/twitter-new.svg"/>
+        </a>
+        <a href="https://www.linkedin.com/company/anacondainc" target="_blank" aria-haspopup="true" data-tooltip title="Find us on LinkedIn">
+          <img src="/static/img/social-icons/linkedin-new.svg"/>
+        </a>
+        <a href="https://github.com/ContinuumIO" target="_blank" aria-haspopup="true" data-tooltip title="Follow us on GitHub">
+          <img src="/static/img/social-icons/github-new.svg"/>
+        </a>
+        <a href="https://www.instagram.com/anaconda_inc/" target="_blank" aria-haspopup="true" data-tooltip title="Follow us on Instagram">
+          <img src="/static/img/social-icons/instagram-new.svg"/>
+        </a>
+        <a href="https://www.youtube.com/c/ContinuumIo" target="_blank" aria-haspopup="true" data-tooltip title="Watch us on YouTube">
+          <img src="/static/img/social-icons/youtube-new.svg"/>
+        </a>
+      </div>
+    </div>
+    <div class="columns medium-3">
+      <h5>ANACONDA</h5>
+      <p>
+        <a href="https://www.anaconda.com/about-us">About Us</a><br>
+        <a href="https://anaconda.cloud/?utm_source=anacondaorg" target="_blank">Anaconda Cloud</a><br>
+        <a href="https://www.anaconda.com/download" target="_blank">Download Anaconda</a><br>
+      </p>
+    </div>
+    <div class="columns medium-3">
+      <h5>ANACONDA.ORG</h5>
+      <p>
+        <a href="https://www.anaconda.com/about-us">About</a><br>
+        <a href="https://docs.anaconda.com/free/anacondaorg/user-guide/" target="_blank">Documentation</a><br>
+        <a href="https://anaconda.org/contact/report">Support</a><br>
+      </p>
+    </div>
+    <div class="columns medium-3 end">
+      <h5>COMMUNITY</h5>
+      <p>
+        <a href="https://www.anaconda.com/open-source" target="_blank">Open Source</a><br>
+        <a href="https://numfocus.org" target="_blank">NumFOCUS</a><br>
+        <a href="https://conda-forge.org" target="_blank">conda-forge</a><br>
+        <a href="https://www.anaconda.com/blog" target="_blank">Blog</a><br>
+      </p>
+    </div>
+  </div>
+
+</footer>
+<div class="license full-width">
+  <div class="row licence-row">
+    <div class="columns medium-12 text-center">
+      <h5>
+        <hr class="licence-hr">
+        <span class="licence-copyright">&copy; 2023 Anaconda, Inc. All Rights Reserved. (v2.37.7 28d4c9c5)</span>
+        
+        <span class="licence-policies">
+          <a href="https://legal.anaconda.com/policies/en/?name=anaconda-org-terms-and-conditions" target="_blank">Legal</a>
+          &#124;
+          <a href="https://www.anaconda.com/privacy-policy" target="_blank">Privacy Policy</a>
+        </span>
+        
+      </h5>
+    </div>
+  </div>
+</div>
+    
+    
+    
+    
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MTFQWW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTFQWW');</script>
+<!-- End Google Tag Manager -->
+    
+    <div id="ajax-modal" class="reveal-modal" data-reveal aria-hidden="true"></div>
+  </body>
+</html>
